@@ -5,7 +5,6 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class DatabaseConfig {
-    // Sesuaikan URL, username, dan password dengan XAMPP MySQL Anda
     private static final String URL = "jdbc:mysql://localhost:3306/mypadangku_resep";
     private static final String USER = "root";
     private static final String PASS = "";
