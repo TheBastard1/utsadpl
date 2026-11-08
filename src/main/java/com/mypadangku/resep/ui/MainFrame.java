@@ -1,6 +1,6 @@
 package com.mypadangku.resep.ui;
 
-import com.mypadangku.resep.dao.ResepDAO;
+import com.mypadangku.resep.controller.ResepController;
 import com.mypadangku.resep.model.Resep;
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
@@ -11,10 +11,10 @@ public class MainFrame extends JFrame {
 
     private JTable table;
     private DefaultTableModel tableModel;
-    private ResepDAO resepDAO;
+    private ResepController resepDAO;
 
     public MainFrame() {
-        resepDAO = new ResepDAO();
+        resepDAO = new ResepController();
         setTitle("Kelola Resep - MyPadangKu");
         setSize(800, 600);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

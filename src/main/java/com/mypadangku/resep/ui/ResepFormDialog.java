@@ -1,6 +1,6 @@
 package com.mypadangku.resep.ui;
 
-import com.mypadangku.resep.dao.ResepDAO;
+import com.mypadangku.resep.controller.ResepController;
 import com.mypadangku.resep.model.Resep;
 import javax.swing.*;
 import java.awt.*;
@@ -12,12 +12,12 @@ public class ResepFormDialog extends JDialog {
     private JTextArea txtDeskripsi;
     private JTextArea txtBahanCara;
     private Resep resep;
-    private ResepDAO resepDAO;
+    private ResepController resepDAO;
 
     public ResepFormDialog(Frame owner, Resep resep) {
         super(owner, resep == null ? "Tambah Resep Baru" : "Ubah Resep Masakan", true);
         this.resep = resep;
-        this.resepDAO = new ResepDAO();
+        this.resepDAO = new ResepController();
         setSize(500, 500);
         setLocationRelativeTo(owner);
         initComponents();
